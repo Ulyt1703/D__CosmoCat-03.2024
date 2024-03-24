@@ -4,48 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmoCat</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
     <header class="header">
         <img class="header__img" src="" alt="Logo">
-            <div class="header__menu">
-                <h1>Menu</h1>
-            </div>
+                <ul class="header-list">
+                    <li class="header-About">About</li>
+                    <li class="header-Home">Home</li>
+                    <li class="header-Contact">Contact</li>
+                </ul>
     </header>
     <main class="main">
         <section class="container">
             <div class="slider">
                 <div class="slider__slide">
                     <div class="slider__slide-body">
-                        <h2 class="slider__slide-title">Cosmos Tomatos</h2>
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <h2 class="slider__slide-title">Earth</h2>
+                        <div class="box-shadow">
+                            <img class="Earth-image" src="./img/Planet.png" alt="">
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Near__Earth-planet" src="./img/Planet near Earth.png" alt="">
+                            <div class="shadow__under-NearEarthPlanet"></div>
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Spaceship__near-Earth" src="./img/Spaceship.png" alt="">
+                            <div class="shadow__under-SpaceshipNearEarth"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <div class="slider__slide-body">
+                        <h2 class="slider__slide-title">Mars</h2>
+                        <!--                         <div class="box-shadow">
+                            <div class="shadow"></div>
+                        </div> -->
+                        <div class="box-shadow">
+                            <img class="Mars-image" src="./img/Mars.png" alt="">
+                            <div class="shadow-Mars"></div>
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Planet__Near-Mars" src="./img/Planet-Nears-The Mars.png" alt="">
+                            <div class="shadow__under-NearMarsPlanet"></div>
+                        </div>
                         <img src="" alt="">
                     </div>
                 </div>
                 <div class="slider__slide">
                     <div class="slider__slide-body">
-                        <h2 class="slider__slide-title">Cosmos Apple</h2>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <h2 class="slider__slide-title">Saturn</h2>
+                        <div class="box-shadow">
+                            <img class="Saturn-image" src="./img/Saturn.png" alt="">
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Planet__Near-Saturn" src="./img/Planet__Near-Saturn.png" alt="">
+                            <div class="shadow__under-SpaceshipNearSaturn"></div>
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Spaceship__Near-Saturn" src="./img/Spaceship-Near-Saturn.png" alt="">
+                            <div class="shadow__under-NearSaturnSpaceship"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="slider__slide">
                     <div class="slider__slide-body">
-                        <h2 class="slider__slide-title">Cosmos Banana</h2>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__slide">
-                    <div class="slider__slide-body">
-                        <h2 class="slider__slide-title">Cosmos Citrus</h2>
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <h2 class="slider__slide-title">Mercury</h2>
+                        <div class="box-shadow">
+                            <img class="Mercury-image" src="./img/Mercury.png" alt="">
+                            <div class="shadow-Mercury"></div>
+                        </div>
+                        <div class="box-shadow">
+                            <img class="Planet__Near-Mercury" src="./img/Planet__Near-Mercury.png" alt="">
+                            <div class="shadow__under-PlanetNearMercury"></div>
+                        </div>
                         <img src="" alt="">
                     </div>
                 </div>
@@ -53,23 +88,22 @@
             </div>
             <div class="slider__dots">
                 <ul class="slider__dots-groop">
-                    <li class="slider__dots__groop-element">1</li>
-                    <li class="slider__dots__groop-element">2</li>
-                    <li class="slider__dots__groop-element">3</li>
-                    <li class="slider__dots__groop-element">4</li>
+                    <li class="slider__dots__groop-element-1">Earth</li>
+                    <li class="slider__dots__groop-element-2">Mars</li>
+                    <li class="slider__dots__groop-element-3">Saturn</li>
+                    <li class="slider__dots__groop-element-4">Mercury</li>
                 </ul>
             </div>
-            <button class="right">
-                right
-            </button>
-            <button class="left">
-                left
-            </button>
             <footer class="footer">
                 <div class="footer__title">
-                    <h2></h2>
-                    <h2></h2>
-                    <h2></h2>
+                    <div class="Footer-language">
+                        <h2 class="EN-language">EN</h2>
+                        <h2 class="RU-language">UA</h2>
+                    </div>
+                <div class="Footer-another">
+                        <h2 class="footer-legals">Legals</h2>
+                        <h2 class="footer-video">Replay video</h2>
+                </div>
                 </div>
             </footer>
         </section>
@@ -78,5 +112,6 @@
 
 
     <script src="./script.js"></script>
+    <script src="./paralax.js"></script>
 </body>
 </html>
